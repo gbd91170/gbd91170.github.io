@@ -1,0 +1,58 @@
+.s1 {
+    width: 100%;
+    background: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 100% 0%
+    }
+    .left {
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        padding: 20px 10px;
+        border : 1px $brown-gold dashed;
+        .curse {
+            @include  cursive;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        h4 {
+            @include title;
+            font-size: 2rem;
+        }
+        i {
+            color : grey;
+            margin: 20px 0;
+        }
+        p {
+            color: $black-light;
+            font-family: $f-serif;
+            font-size: 0.75rem;
+            padding: 5px;
+        }
+        .img {
+            background: url(../img/avatar-01.jpg) center/cover;
+            height: 100px;
+            width: 100px;
+            margin : 10px auto;
+            border-radius: 300px;
+        }
+        p.nom {
+            font-size : 1rem;
+            font-weight: 800;
+            font-family: $f-sans-serif;
+        }
+        p.job {
+            @include title;
+            color :grey;
+            letter-spacing: 0px;
+
+        }
+
+
+    }
+    .right {
+        background: url(../img/store-01.jpg) center/cover;
+    }
+}

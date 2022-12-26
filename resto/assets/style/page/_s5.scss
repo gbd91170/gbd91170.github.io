@@ -1,0 +1,53 @@
+section.s5 {
+    @media screen and (max-width: 500px) {
+        min-height: 75vh;
+        transform: translateY(-100px);
+    }
+    z-index:1;
+    width:75%;
+    height: 50vh;
+    background: whitesmoke;
+    margin: 150px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &:before{
+        content:"";
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        background: url(../img/avatar-02.jpg) center/cover;
+        position: absolute;
+        left:calc(50% - 35px);
+        top:-35px;
+    }
+    p{
+        font-family: $f-serif;
+        margin: 15% 0 10% 0;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+        color:$black-light;
+        @media screen and (max-width: 750px) {
+            font-size:0.8rem;
+            padding-left: 5px;
+        }
+    }
+    i {
+        transform: translateY(-0.5rem);
+    }
+    h3 {
+        font-family: $f-sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin-bottom: 15px;
+    }
+    h4{
+        color:$brown-gold;
+        font-family: $f-sans-serif;
+        font-weight: 100;
+        margin-bottom: 100px;
+    }
+}

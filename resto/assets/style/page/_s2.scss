@@ -1,0 +1,247 @@
+section.s2 {
+    width: 80%;
+    margin : 40px auto 100px;
+    text-align: center;
+    position: relative;
+    h3 {
+        @include cursive;
+        font-size: 2rem;
+    }
+    i {
+        color : grey;
+        margin: 20px 0 40px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        font-family: $f-sans-serif;
+        li {
+            border-bottom: 1px solid white;
+            a{
+                cursor: pointer;;
+                &:hover{
+                    font-size: 2*$f-size;
+                    color:grey;
+                }
+            }
+        }
+    }
+    .s2-main {
+        margin-top: 35px;
+        border-top: 3px solid $brown-gold;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
+        .dish {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 25% 60% 15%;
+            align-items: center;
+            text-align-last: left;
+            position: relative;
+            h5 {
+                @include title;
+                font-size: 0.7rem;
+                letter-spacing: 0px;
+                margin-left: 5px;
+                @media screen and (max-width: 1000px) {
+                    font-size:0.6rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size:0.5rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size:0.4rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 0.7rem;
+                    letter-spacing: 0px;
+                    margin-left: 5px;
+                }
+            }
+            p {
+                margin-top: 5px;
+                margin-left: 5px;
+                @media screen and (max-width: 1000px) {
+                    font-size:0.8rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size:0.65rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size:0.5rem;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1rem;
+                    letter-spacing: 0px;
+                    margin-left: 5px;
+                }
+            }
+            .price {
+                @include cursive;
+                font-size: 1.25rem;
+                font-weight: bold;
+                @media screen and (max-width: 800px) {
+                    font-size:0.8rem;
+                    padding-right: 10px;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size:0.72rem;
+                    padding-right: 3px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1.25rem;
+                }
+            }
+            .img-dish1 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-01.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish2 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-02.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish3 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-03.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish4 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-04.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish5 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-05.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish6 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-06.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish7 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-07.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .img-dish8 {
+                width: 75px;
+                height: 75px;
+                background: url(../img/dish-item-08.jpg) center/cover;
+                border-radius: 200px;
+                margin: 10px 10px 10px 20px;
+                @media screen and (max-width: 900px) {
+                    width: 60px;
+                    height: 60px;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            &:after{
+                content:"";
+                position: absolute;
+                height: 10px;
+                width: 90%;
+                border-bottom: 1px dashed grey;
+                bottom: -20px;
+                transform: translate(5%);
+
+            }
+        }
+    }
+    .image-bas {
+        background: url(../img/bg-menu-01.jpg) center/cover;
+        width: 125%;
+        height: 500px;
+        position: absolute;
+        bottom: -100px;
+        left: -12.5%;
+        z-index: -1;
+    }
+    
+}

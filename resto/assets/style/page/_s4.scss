@@ -1,0 +1,196 @@
+section.s4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (max-width: 500px) {
+        display:none;
+    }
+    .sous-titre {
+        color:$brown-gold;
+        font-family: $f-curs;
+        font-size: 3rem;
+        font-weight: 100;
+
+    }
+    .titre {
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: $f-serif;
+        letter-spacing: 5px;
+        transform: translateY(-8px);
+    }
+    i {
+        color : grey;
+        margin: 30px;
+    }
+    .events-container {
+        width:75%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "event1 event3"
+            "event2 event3";
+        gap :20px;
+        background: none;
+        .events1,.events2 {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            align-items: center;
+            .date-container1 {
+                height: 100%;
+                background: url("../img/event-01.jpg") center/cover;
+            }
+            .date-container2 {
+                height: 100%;
+                background: url("../img/event-02.jpg") center/cover;
+            }
+        }
+        .date-container1,.date-container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .date{
+            background:$black-light ;
+            width: 50%;
+            height: 40%;
+            color: whitesmoke;
+            font-family: $f-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1rem;
+            @media screen and (max-width: 1100px) {
+                font-size:0.8rem;
+            }
+            @media screen and (max-width: 800px) {
+                font-size:0.6rem;
+                height : 20%;
+            }
+            @media screen and (max-width: 650px) {
+                font-size:0.4rem;
+                height : 20%;
+                width: 60%;
+                letter-spacing: 1px;
+            }
+
+        }
+        .description {
+            background: whitesmoke;
+            text-align: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h3 {
+                color: rgb(66, 66, 66);
+                font-weight: 100;
+                margin: 20px;
+            }
+            i{
+                margin: 0;
+            }
+            p {
+                font-size: 0.7rem;
+                color: rgb(182, 181, 181);
+                font-family: $f-sans-serif;
+                font-weight:100;
+                margin: 15px;
+                @media screen and (max-width: 1200px) {
+                    font-size:0.6rem;
+                }
+                @media screen and (max-width: 1100px) {
+                    font-size:0.5rem;
+                }
+            }
+            button {
+                font-family: $f-sans-serif;
+                color :  rgb(29, 29, 29);
+                background: whitesmoke;
+                border:none;
+                text-transform: uppercase;
+                margin: 10px 20px 40px;
+                text-align: left;
+                cursor: pointer;
+            }
+        }
+        .events3 {
+            grid-area : event3;
+            background : url("../img/event-03.jpg") center/cover;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .description3 {
+                background: whitesmoke;
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .date {
+                    background:$black-light ;
+                    color: whitesmoke;
+                    font-family: $f-serif;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 25%;
+                    @media screen and (max-width: 650px) {
+                        width : 40%;
+                    }
+                    @media screen and (max-width: 500px) {
+                        width : 60%;
+                    }
+                    height: 25%;
+                    transform: translateY(-18px);
+                    h3 {
+                        color:whitesmoke;
+                        font-weight: bold;
+                    }
+                    h4 {
+                        @media screen and (max-width: 650px) {
+                            font-size:0.5rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                h3 {
+                    color: rgb(66, 66, 66);
+                    font-weight: 200;
+                    margin: 20px;
+                }
+                i{
+                    margin: 0;
+                }
+                p {
+                    font-size: 0.8rem;
+                    color: rgb(182, 181, 181);
+                    font-family: $f-sans-serif;
+                    font-weight:100;
+                    margin: 15px;
+                }
+                button {
+                    font-family: $f-sans-serif;
+                    color :  rgb(29, 29, 29);
+                    background: whitesmoke;
+                    border:none;
+                    text-transform: uppercase;
+                    margin: 10px 20px 40px;
+                    text-align: left;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
