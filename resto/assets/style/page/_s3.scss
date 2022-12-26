@@ -1,0 +1,167 @@
+section.s3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    .booking {
+        width:75%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        @media screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
+        margin: 100px 0;
+        background: black;
+        .left{
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: whitesmoke;
+            border : 1px white dashed;
+            margin: 15px;
+            h4 {
+                @include cursive;
+                font-size: 1.75rem;
+                margin-top: 20px;
+                font-weight: 100;
+                line-height: 10px;
+            }
+            h3 {
+                @include title;
+            }
+            i{
+                margin: 20px 0;
+            }
+            .horaire {
+                margin: 10px 10px 20px;
+                .day {
+                    font-family: $f-serif;
+                    color:$brown-gold;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .hour {
+                    font-family:$f-sans-serif;
+                    font-weight:100;
+                    color : rgb(161, 159, 159);
+                    font-size:0.7rem;
+                }
+            }
+            .tel {
+                color:$brown-gold;
+                margin: 20px 0;
+                @media screen and (max-width: 750px) {
+                    font-size: 0.7rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1rem;
+                }
+            }
+            @media screen and (max-width: 625px) {
+                transform: scale(0.9);
+                margin : 0 5px;
+            }
+            @media screen and (max-width: 550px) {
+                transform: scale(0.8);
+                margin : -35px -5px;
+            }
+            @media screen and (max-width: 750px) {
+                transform: scale(0.951);
+                margin: 0;
+            }
+        }
+        .right {
+            background: whitesmoke;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30% 10% 60%;
+            align-items: center;
+            @media screen and (max-width: 500px) {
+                min-height: 100vh;
+            }
+            h4 {
+                @include cursive;
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+            h3 {
+                @include title;
+                font-size: 1.52rem;
+            }
+            i {
+                color: grey;
+            }
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "nb day hour"
+                "name phone Email"
+                "but but but";
+                @media screen and (max-width: 500px) {
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                            "nb"
+                            "day"
+                            "hour"
+                            "name"
+                            "phone"
+                            "Email"
+                            "but";
+                }
+                gap:20px;
+                margin: 0 25px;
+                input {
+                    border : none;
+                    background: whitesmoke;
+                    font-size: 1rem;
+                    @media screen and (max-width: 900px) {
+                        font-size: 0.7rem;
+                    }
+                    @media screen and (max-width: 700px) {
+                        font-size: 0.55rem;
+                    }
+                    margin-top: 20px;
+                    @media screen and (max-width: 500px) {
+                        font-size: 1rem;
+                        margin-top: 10px;
+                    }
+                    font-family : $f-serif;
+                    font-weight: 400;
+                    border-bottom: 2px solid rgb(180, 179, 179);
+                    width: 90%;
+                }
+                input[type="number"]::placeholder{
+                    color: black;
+                }
+                input[type="submit"]
+                {
+                    @include title ;
+                    font-size: 1.52rem;
+                    grid-area: but;
+                    border: none;
+                    border-radius: 100px;
+                    width: 50%;
+                    margin: 20px auto;
+                    padding: 10px 0;
+                    color:white;
+                    background: black;
+                    transition: 0.4s;
+                    @media screen and (max-width: 900px) {
+                        font-size: 1rem;
+                    }
+                    @media screen and (max-width: 700px) {
+                        font-size: 0.8rem;
+                    }
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+input {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+}
+input:focus {
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  flex: 1 0 25%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-width: 280px;
+  background: rgb(243, 239, 204);
+  border: solid 1px gray;
+  border-radius: 20px;
+  margin: 25px;
+  padding: 15px;
+}
+li.card img {
+  height: 75px;
+}
+h2 {
+  color: rgb(4, 63, 114);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+h3 {
+  color: rgb(2, 48, 88);
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
+p {
+  color: rgb(2, 48, 88);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.82rem;
+  font-weight: bold;
+}

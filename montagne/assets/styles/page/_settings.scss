@@ -1,0 +1,21 @@
+// Colors
+$gris : grey;
+$noir : rgb(1, 17, 27);
+$blanc : rgb(248, 252, 252);
+$grisclair : rgb(233, 231, 231);
+//fonts
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-VariableFont_slnt.ttf);
+}
+@font-face {
+    font-family: "merri";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+//general
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    // border: 1px solid black;
+}

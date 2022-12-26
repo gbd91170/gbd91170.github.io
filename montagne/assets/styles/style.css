@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter-VariableFont_slnt.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(248, 252, 252);
+}
+.header h1 {
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  width: 50%;
+  margin-top: 150px;
+}
+.header p {
+  font-family: merry, sans-serif;
+  margin: 40px 0;
+  width: 75%;
+}
+.header .i {
+  font-size: 1rem;
+  border: 1px solid rgb(248, 252, 252);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+.header nav {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+.header nav .nav-left ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.header nav .nav-left ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-family: "inter";
+  letter-spacing: 1px;
+  width: 100%;
+}
+.header nav .nav-left ul li:hover {
+  color: rgb(1, 17, 27);
+  background: rgb(233, 231, 231);
+}
+.header nav .nav-right ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+.header nav .nav-right ul li a {
+  color: rgb(248, 252, 252);
+  text-decoration: none;
+}
+.header nav .nav-right ul li a i {
+  border: 1px solid rgb(230, 227, 227);
+  border-radius: 200px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.header nav .nav-right ul li a i:hover {
+  background: rgb(1, 17, 27);
+  color: rgb(248, 252, 252);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: rgb(248, 252, 252);
+  color: rgb(1, 17, 27);
+  margin: 0 12.5%;
+  font-family: inter, serif;
+}
+section h4 {
+  padding: 1.5em;
+  font-weight: 200;
+  color: rgb(56, 55, 55);
+  font-family: merry, serif;
+  position: relative;
+  width: 100%;
+}
+section h4:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  background: rgb(234, 233, 233);
+  transform: translate(-120%, 10px);
+}
+section h4:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  background: rgb(211, 210, 210);
+  transform: translate(20%, 10px);
+}
+section h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 30px 0;
+}
+section p {
+  font-family: merry, serif;
+  line-height: 24px;
+  margin: 20px 0;
+  width: 50%;
+}
+section .img-jump {
+  height: 50vw;
+  width: 75%;
+  background: url("../img/pic01.jpg") center/cover;
+}
+section .main-bottom {
+  display: flex;
+}
+section .main-bottom .under {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid rgb(234, 233, 233);
+}
+section .main-bottom .under h5 {
+  padding: 0.75em;
+  font-weight: 100;
+  color: rgb(56, 55, 55);
+  font-family: merry, serif;
+  width: 100%;
+}
+section .main-bottom .under h3 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  width: 50%;
+  padding: 15px 0;
+}
+section .main-bottom .under p {
+  font-family: merry, serif;
+  line-height: 24px;
+  margin: 20px 0;
+  width: 50%;
+}
+section .main-bottom .under .img-forest {
+  height: 25vw;
+  width: 75%;
+  background: url("../img/pic02.jpg") center/cover;
+}
+section .main-bottom .under .img-fall {
+  height: 25vw;
+  width: 75%;
+  background: url("../img/pic03.jpg") center/cover;
+}
+
+button {
+  text-transform: uppercase;
+  border: 1px solid rgb(1, 17, 27);
+  padding: 5px 30px;
+  margin: 20px 0 40px;
+  cursor: pointer;
+  transition: 0.2s;
+  max-width: 200px;
+}
+button:hover {
+  color: rgb(248, 252, 252);
+  background: rgb(192, 191, 191);
+}
+
+footer {
+  background: rgb(248, 252, 252);
+  width: 75%;
+  margin: 50px 12.5% 75px;
+  display: flex;
+  color: grey;
+}
+footer .form {
+  border: 1px solid rgb(234, 233, 233);
+  width: 50%;
+}
+footer .form form {
+  margin: 25px 25px;
+  display: flex;
+  flex-direction: column;
+}
+footer .form form label {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  margin: 15px 0px;
+  font-weight: 800;
+}
+footer .form form input[type=text] {
+  font-size: 0.75rem;
+  padding: 5px 0;
+  color: rgb(1, 17, 27);
+  border: 1px solid grey;
+}
+footer .form form textarea {
+  font-size: 0.75rem;
+  padding: 5px 0;
+  color: rgb(1, 17, 27);
+  border: 1px solid grey;
+  resize: none;
+  height: 8rem;
+}
+footer .form form button {
+  color: grey;
+  border: 1px solid grey;
+  background: rgb(248, 252, 252);
+}
+footer .contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 64%;
+  align-items: center;
+}
+footer .contact h6 {
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-family: inter, serif;
+  position: relative;
+}
+footer .contact p {
+  font-size: 0.75rem;
+  color: grey;
+}
+footer .contact ul {
+  max-width: 150px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+footer .contact ul li a {
+  color: rgb(1, 17, 27);
+  text-decoration: none;
+  border: 1px solid rgb(230, 227, 227);
+  border-radius: 200px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+footer .contact ul li a:hover {
+  background: rgb(1, 17, 27);
+  color: rgb(248, 252, 252);
+}/*# sourceMappingURL=style.css.map */

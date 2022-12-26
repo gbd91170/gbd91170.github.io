@@ -1,0 +1,13 @@
+button {
+    text-transform: uppercase;
+    border: 1px solid $noir;
+    padding: 5px 30px;
+    margin: 20px 0 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    max-width: 200px;
+    &:hover {
+        color : $blanc;
+        background: rgb(192, 191, 191);
+    }
+}
